@@ -1,0 +1,34 @@
+.top-card {
+  max-width: 360px;
+  background-color: var(--color-light);
+  border-radius: 53px 3px 53px 3px;
+  overflow: hidden;
+  margin-inline: auto;
+
+  &__img {
+    margin-bottom: 22px;
+  }
+
+  &__body {
+    margin-inline: 20px;
+    &-name {
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+    &-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 22px;
+    }
+
+    &-time {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      column-gap: 5px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.delivery {
+  &__inner {
+    margin-bottom: 250px;
+    display: flex;
+    position: relative;
+
+    @include dekstop {
+      margin-bottom: 110px;
+    }
+
+    @include tablet {
+      margin-bottom: 80px;
+    }
+
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 530px;
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+    }
+
+    &-title {
+      &:not(:last-child) {
+        margin-bottom: 23px;
+
+        @include mobile {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &-subscription:not(:last-child) {
+      &:not(:last-child) {
+        margin-bottom: 44px;
+
+        @include mobile {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  &__interaction {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &-app {
+      text-decoration: underline;
+
+      @include hover {
+        text-decoration: none;
+        color: var(--color-accent);
+      }
+    }
+  }
+
+  &__image {
+    position: absolute;
+    max-width: 760px;
+    height: auto;
+    top: -107px;
+    right: -117px;
+    z-index: -1;
+
+    @include dekstop {
+      max-width: 500px;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

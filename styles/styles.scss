@@ -1,0 +1,9 @@
+@import "./normalize", "./fonts", "./mixins", "./media", "./globals", "./utils",
+  "./variables";
+
+@import "./blocks/button", "./blocks/burger-button", "./blocks/mobile-overlay",
+  "./blocks/cross-button", "./blocks/pagination", "./blocks/grid",
+  "./blocks/header", "./blocks/delivery", "./blocks/categories",
+  "./blocks/product-card", "./blocks/advantages", "./blocks/top-food",
+  "./blocks/top-card", "./blocks/app", "./blocks/reviews",
+  "./blocks/review-card", "./blocks/subscribe", "./blocks/footer";

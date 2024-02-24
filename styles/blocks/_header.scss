@@ -1,0 +1,74 @@
+.header {
+  &__inner {
+    margin-top: 53px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__nav {
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include dekstop {
+      gap: 30px;
+    }
+
+    @include tablet {
+      gap: 15px;
+    }
+
+    &-list {
+      display: flex;
+      gap: 40px;
+
+      @include dekstop {
+        gap: 30px;
+      }
+
+      @include tablet {
+        gap: 15px;
+      }
+    }
+
+    &-item {
+      @include hover {
+        color: var(--color-accent);
+      }
+    }
+    &-cart,
+    &-search {
+      @include reset-button;
+    }
+
+    &-cart {
+      position: relative;
+      &-counter {
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        font-size: 10px;
+        text-align: center;
+        width: 14px;
+        aspect-ratio: 1;
+        color: var(--color-light);
+        background-color: var(--color-accent);
+        border-radius: 50%;
+      }
+    }
+
+    &-button {
+      @include tablet {
+        padding-inline: 15px;
+      }
+    }
+  }
+}

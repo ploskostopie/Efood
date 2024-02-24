@@ -1,0 +1,76 @@
+.review-card {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+
+    @include tablet {
+      flex-direction: column;
+      padding-inline: 10px;
+    }
+
+    &-img {
+      border-radius: 24px;
+      overflow: hidden;
+      img {
+        @include dekstop {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 560px;
+    }
+
+    &-text {
+      position: relative;
+      margin-bottom: 65px;
+      display: inline-block;
+      font-size: 20px;
+      line-height: 2;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 18px;
+        color: #dddd;
+      }
+
+      &::before {
+        left: -5%;
+        background-image: url(../../images/icons/quote-start.svg);
+      }
+
+      &::after {
+        left: 95%;
+        background-image: url(../../images/icons/quote-end.svg);
+      }
+    }
+
+    &-footer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-name {
+      font-weight: 500;
+      color: var(--color-accent);
+      font-size: 20px;
+      font-style: normal;
+    }
+
+    &-prof {
+      color: #aaaaaa;
+      font-size: 14px;
+      font-style: normal;
+    }
+  }
+}

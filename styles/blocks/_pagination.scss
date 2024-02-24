@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__arrow-button {
+    @include reset-button;
+
+    color: var(--color-accent);
+
+    &[disabled] {
+      color: #d1d2dc;
+    }
+
+    svg {
+      display: block;
+      margin-block: auto;
+    }
+  }
+  &__list {
+    display: flex;
+    column-gap: 14px;
+    margin-inline: 26px;
+  }
+
+  &__button {
+    @include reset-button;
+    @include square(12);
+    border-radius: 50%;
+    background-color: rgba(#363853, 0.2);
+
+    &.is-current {
+      background-color: var(--color-accent);
+    }
+
+    &:hover {
+      background-color: var(--color-accent);
+    }
+  }
+}

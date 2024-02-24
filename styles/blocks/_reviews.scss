@@ -1,0 +1,35 @@
+.reviews {
+  &__inner {
+    position: relative;
+    margin-bottom: 100px;
+
+    @include tablet {
+      margin-bottom: 50px;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
+  }
+  &__actions {
+    position: absolute;
+    display: flex;
+    column-gap: 44px;
+    right: 3%;
+    bottom: 0%;
+  }
+  &__arrow-button {
+    @include reset-button;
+    @include hover {
+      color: var(--color-accent);
+    }
+  }
+}

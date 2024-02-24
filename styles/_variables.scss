@@ -1,0 +1,32 @@
+:root {
+  --color-dark: #363853;
+  --color-light: #fff;
+  --color-accent: #ff7a50;
+
+  --border-radius: 5px;
+  --border-radius-small: 2px;
+  --border-radius-large: 30px;
+  --border-radius-large-alt: 20px;
+
+  --font-family-base: "Rubik", sant-serif;
+
+  --container-width: 1170px;
+  --container-padding-x: 135px;
+
+  --input-height: 50px;
+  --button-height: 78px;
+
+  --transition-duration: 0.2s;
+
+  @include dekstop {
+    --container-padding-x: 100px;
+  }
+
+  @include tablet {
+    --container-padding-x: 60px;
+  }
+
+  @include mobile {
+    --container-padding-x: 15px;
+  }
+}

@@ -1,0 +1,75 @@
+.advantages {
+  &__inner {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    @include mobile {
+      margin-bottom: 50px;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__image {
+    @include dekstop {
+      width: 400px;
+      height: auto;
+    }
+    @include tablet {
+      width: 300px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__body {
+    width: 450px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subscription {
+    margin-bottom: 13px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+
+    @include mobile {
+      margin-bottom: 20px;
+      width: 242px;
+      margin-inline: auto;
+      align-items: flex-start;
+      text-align: start;
+      row-gap: 6px;
+    }
+    &-item {
+      display: flex;
+      column-gap: 25px;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      margin-inline: auto;
+    }
+  }
+}

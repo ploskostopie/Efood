@@ -1,0 +1,29 @@
+.top-food {
+  &__inner {
+    margin-bottom: 160px;
+
+    @include dekstop {
+      margin-bottom: 120px;
+    }
+
+    @include tablet {
+      margin-bottom: 80px;
+    }
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__list {
+    justify-content: center;
+  }
+}
