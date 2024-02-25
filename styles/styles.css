@@ -826,8 +826,8 @@ h2,
 .product-card__price:not(:last-child) {
   margin-bottom: 5px;
 }
-.product-card__buttom {
-  flex-shrink: 0;
+.product-card__button {
+  margin-bottom: 10px;
 }
 
 .advantages__inner {
