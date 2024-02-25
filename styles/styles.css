@@ -1196,6 +1196,7 @@ h2,
   .subscribe__inner {
     margin-bottom: 50px;
     height: auto;
+    padding-inline: 18px;
   }
 }
 .subscribe__title {
